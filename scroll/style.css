@@ -1,0 +1,21 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 500vh;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.square {
+    background-color: rgba(0,0,255,0.4);
+    position: fixed;
+}

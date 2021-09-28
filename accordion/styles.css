@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body{
+    background-color: rgba(225,225,255,1);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content {
+    transform: translateY(0);
+    transform-origin: top;
+    transition: all .5s ease-in-out;
+}
+
+.content:hover .button {
+    transition-delay: 50ms;
+    transform: translateX(-5%);
+    transform-origin: left;
+
+}
+
+.button {
+    margin-top: 10px;
+    padding: 7px;
+    width: 5rem;
+    border-radius: 8px;
+    transform: translateX(-130%);
+    transition: all .5s ease-in-out;
+    align-content: center;
+    text-decoration: none;
+    color: gray;
+    background-color: rgba(255,0,0,0.4);
+}
+.content * {
+    display: none;
+
+}
+
+.content.active * {
+    display: flex;
+
+}
+
+.content.active {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    width: 460px;
+    transform-origin: left top;
+    transform: translateY(1);
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, .4);
+    background: rgba(22,22,22,0.1);
+}
+
+button {
+    padding: 10px 20px;
+    width: 500px;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, .4);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion {
+    color: gray;
+    overflow: hidden;
+}
+
+.circle-background{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+}
+
+.circle-background-1{
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+}
